@@ -30,16 +30,16 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
 #IfWinActive ahk_exe RustClient.exe
 *g:: ;Look for "g" ignoring any modifiers
-Send, {Numpad1 Down} ;Send the keydown for Num1
+Send, {F10 Down} ;Send the keydown for Num1
 Sleep, 100 ;...and hold it
-Send, {Numpad1 Up} ;...and release Num1 (keyup)
+Send, {F10 Up} ;...and release Num1 (keyup)
 Send, {g down} ;Send the keydown for 'g'
 KeyWait, g ;...wait for the actual 'g' to be released
 Send, {g up} ;Release 'g' (keyup)
 Sleep, 300 ;Wait for the game's transition from map to gameview completes
-Send, {Numpad2 Down} ;Send the keydown for Num2
+Send, {F11 Down} ;Send the keydown for Num2
 Sleep, 100 ;...and hold it
-Send, {Numpad2 Up} ;...and release Num2 (keyup)
+Send, {F11 Up} ;...and release Num2 (keyup)
 return ;End of this code block
 
 ;;;;;::::::::::::::::::::::::

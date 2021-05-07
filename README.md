@@ -15,12 +15,18 @@ Copy the files to a direcotry where you can easily find them, such as Documents\
 #### Usage
 
 You can run this script one of two ways: 
-1. Either install [AutoHotKey](https://www.autohotkey.com/download/) (version as of this release is v1.1.30.03 - April 5, 2019) and then running the script (right click the script, _Run Script_), or
+1. Either install [AutoHotKey](https://www.autohotkey.com/download/) (version as of this release is v1.1.33.06) and then running the script (right click the script -> 'Run Script'), or
 2. Run the pre-compiled, included .exe file.
 
-When you are done with your Rust stream and want to kill the script, fine the AutoHotKey icon in the system tray near the clock, right click it and choose the appropriate option.
+Next, in the sources for OBS, make sure that in the scene with your Game Capture, the image being used as the map cover is ABOVE the Game Capture, but hidden (eye is crossed out, see provided example image example-obs-sources.png).
 
-The script as released assumes the user has kept the default Rust map keybind 'g' and will assign OBS keybinds to show the cover source (Num1) and hide the cover source (Num2). If you wish to alter these, please make the changes in the script and then either run the script or re-compile it using AutoHotKey.
+Finally, in OBS Settings -> Keybinds, set 'Show' for the map cover image to F10 and 'Hide' for the map cover image to F11. See the example image 'OBS_keybinds.png' as an example.
+
+Now, pressing g while in Rust will show the map cover image and releasing g will hide the map cover image.
+
+NOTE: this will ONLY work while you are IN the Rust.exe game client. The map cover image will not show/hide if you are not in the running game.
+
+When you are done with your Rust stream and want to kill the script, find the AutoHotKey icon in the system tray near the clock, right click it and choose the appropriate option.
 
 ## License
 
