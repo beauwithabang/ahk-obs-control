@@ -2,8 +2,8 @@
 ;description    :For Rust streamers, allows you to hide your in-game map from the stream
 ;               :without using any extra keys
 ;author         :Beau Breeden beau@beaubreeden.me
-;date           :2019 08 12
-;version        :Release 0.2
+;date           :2021 05 07
+;version        :Release 0.5
 ;usage          :1)Install AutoHotKey and run this script, or 2)Run the provided .exe
 ;notes          :This version toggles the show/hide of an OBS source in the gameplay scene
 ;               :rather than using a seperate scene and dealing with scene transition effects
